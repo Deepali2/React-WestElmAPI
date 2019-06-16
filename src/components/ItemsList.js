@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Item from './component/Item/Item';
+import Item from './Item';
 import data from '../data.js';
 
 class ItemsList extends Component {  
@@ -36,6 +36,5 @@ class ItemsList extends Component {
     ); 
   }            
 }
-
 
 export default ItemsList;
