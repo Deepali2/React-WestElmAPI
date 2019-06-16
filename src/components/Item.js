@@ -4,9 +4,9 @@ import Carousel from './Carousel';
 import get from 'lodash.get'; 
 
 function Item(props) {
-  const {item} = props;
+  const {item, activeCard, setActiveCard} = props;
   var thumbnailImagesUrls = item.images.map(image => image.href);
-  const [overlayShow, setOverlayShow] = useState(false);
+  // const [overlayShow, setOverlayShow] = useState(false);
   const[heroImageUrl, setHeroImageUrl] = useState(
     get(props, 'item.hero.href', 'hero') //object, path, default value
   );  
@@ -19,15 +19,15 @@ function Item(props) {
     
   return (
     <li className="card">           
-      {overlayShow && (
+      {activeCard && 
         <Carousel imgUrls={imgUrls} />  
-      )}
+      }
       <div>
         <div className='name-price'>
           <h1 className="item-name">{item.name}</h1>
           <p className="item-price">${lowSellingPrice} - ${highSellingPrice}</p>          
         </div> 
-        <div><img src={heroImageUrl} alt='hero' className='heroImage' onClick={() => setOverlayShow(true)} /></div>
+        <div><img src={heroImageUrl} alt='hero' className='heroImage' onClick={setActiveCard} /></div>
         
         <div className='thumbnails'>            
           <ul className="all-Thumbnail-Images">
@@ -39,7 +39,7 @@ function Item(props) {
         </div> 
       </div>  
     </li>     
-    )    
+  )    
 }
 
 export default Item;
