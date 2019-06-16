@@ -34,13 +34,13 @@ class Item extends Component{
             <h1 className="item-name">{item.name}</h1>
             <p className="item-price">${item.priceRange.selling.low} - ${item.priceRange.selling.high}</p>          
           </div> 
-          <div><img src={this.state.imageUrl} alt='hero image' className='heroImage' onClick={this.props.handleOverlayShow} /></div>
+          <div><img src={this.state.imageUrl} alt='hero' className='heroImage' onClick={this.props.handleOverlayShow} /></div>
           
           <div className='thumbnails'>            
             <ul className="all-Thumbnail-Images">
-              <li><img src={item.thumbnail.href} alt='thumbnail image' className='thumbnail' onClick={(e) => this.clickHandler(e)} /></li>
+              <li><img src={item.thumbnail.href} alt='thumbnail' className='thumbnail' onClick={(e) => this.clickHandler(e)} /></li>
               {item.images.map((image, index) => (
-              <li key={index}><img src={image.href} alt='tiny image' className='thumbnail' onClick={(e) => this.clickHandler(e)} /></li>            
+              <li key={index}><img src={image.href} alt='tiny' className='thumbnail' onClick={(e) => this.clickHandler(e)} /></li>            
               ))}
             </ul>
           </div> 

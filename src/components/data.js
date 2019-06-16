@@ -1,6 +1,6 @@
 // 20190614121143
 // https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json
-var data = 
+const data = 
 {
   "id": "shop/new/all-new",
   "name": "All New",
@@ -1002,3 +1002,4 @@ var data =
 }
 
 export default data;
+

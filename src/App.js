@@ -1,11 +1,10 @@
 import React from 'react';
-import './App.css';
-import ItemList from './components/ItemList/ItemList';
+import ItemsList from './components/ItemsList';
 
 function App() {
   return (
     <div className="App">
-      <ItemList />
+      <ItemsList />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import ImageSlide from './ImageSlide';
 import Arrow from './Arrow';
 
-class Carousel extends React.Component {
+class Carousel extends Component {
   constructor (props) {
   super(props);		
   this.state = {

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Item from './Item';
-import data from '../data.js';
+import data from './data.js';
 
 class ItemsList extends Component {  
   constructor(props) {
