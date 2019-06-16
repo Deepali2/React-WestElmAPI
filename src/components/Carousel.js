@@ -7,7 +7,7 @@ const Carousel = props => {
    
   const moveSlide = newIndex => {
     if (newIndex >= imgUrls.length) newIndex = 0;
-    if (newIndex < 0) newIndex = imgUrls.length;
+    if (newIndex < 0) newIndex = imgUrls.length - 1;
     setCurrentImageIndex(newIndex);
   };
 
