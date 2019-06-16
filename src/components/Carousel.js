@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Carousel.css';
 import ImageSlide from './ImageSlide';
 import Arrow from './Arrow';
 

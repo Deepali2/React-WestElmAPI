@@ -1,4 +1,5 @@
 import React from "react";
+import './ItemsList.css';
 import Item from './Item';
 import data from './data.js';
 

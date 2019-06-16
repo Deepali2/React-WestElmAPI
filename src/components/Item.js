@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Item.css';
 import Carousel from './Carousel';
 import get from 'lodash.get'; 
 

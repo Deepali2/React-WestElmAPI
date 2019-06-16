@@ -1,4 +1,6 @@
 import React from "react";
+import './ImageSlide.css';
+import './Arrow.css';
 
 const Arrow = ({ direction, clickFunction, glyph }) => (
   <div 
