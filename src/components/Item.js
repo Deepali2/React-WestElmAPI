@@ -5,7 +5,7 @@ import get from 'lodash.get';
 function Item(props) {
   const {item} = props;
   var thumbnailImagesUrls = item.images.map(image => image.href);
-  const [overlayShow, setOverlayShow] = useState();
+  const [overlayShow, setOverlayShow] = useState(false);
   const[heroImageUrl, setHeroImageUrl] = useState(
     get(props, 'item.hero.href', 'hero') //object, path, default value
   );  
@@ -19,9 +19,8 @@ function Item(props) {
   return (
     <li className="card">           
       {overlayShow && (
-        <Carousel imgUrls={imgUrls} resetOverlayShows={() => setOverlayShow(false)}/>
+        <Carousel imgUrls={imgUrls} />  
       )}
-      {/* {this.props.overlayShow ? <Carousel imgUrls={this.state.imgUrls} resetOverlayShows={this.props.resetOverlayShows} /> : null} */}
       <div>
         <div className='name-price'>
           <h1 className="item-name">{item.name}</h1>
@@ -38,10 +37,8 @@ function Item(props) {
           </ul>
         </div> 
       </div>  
-    </li>
-     
-    )
-    
+    </li>     
+    )    
 }
 
 export default Item;
