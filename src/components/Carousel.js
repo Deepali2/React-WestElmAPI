@@ -6,7 +6,7 @@ class Carousel extends Component {
   constructor (props) {
   super(props);		
   this.state = {
-  currentImageIndex: 0
+  currentImageIndex: 0  
   };
 
   this.nextSlide = this.nextSlide.bind(this);

@@ -1,10 +1,10 @@
 import React from "react";
 
-const ImageSlide = ({ url }) => {
+const ImageSlide = ({url}) => {
   const styles = {
   backgroundImage: `url(${url})`,
   backgroundSize: 'cover',
-  backgroundPosition: 'center'
+  backgroundPosition: 'center',
 };
 
   return (
