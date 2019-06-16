@@ -11,101 +11,12 @@ html {
   background: #F6F6F6;
 }
 
-.carousel {
-	height:100%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.image-slide {
-  height: 100%;
-	width: 100%;
-	transition: background-image .3s ease-in-out;
-}
-
-.slide-arrow {
-	color: #F6F6F6;
-	font-size: 2rem;
-	position: sticky;
-	top: 50%;
-}
-
-.slide-arrow.right {  
-  float: right;
-}
-.item-price {
-  text-align: center;
-  margin: 0;
-  padding: 0; 
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-.card {
-  margin: 1rem;
-  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all .2s linear;
-  max-width: calc(33% - 2rem);
-  min-width: 300px;
-}
-
-.card:hover {
-  cursor: pointer;
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-  transform: translate3D(0, -2px, 0);
-}
-
-.heroImage {  
-  width: 100%;
-}
-
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.all-Thumbnail-Images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.thumbnail {
-  height: 50px;
-  margin-right: 15px;  
-}
-
-.ctr {
+/* .ctr {
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: center;
   padding-top: 30%;
-}
+} */
 
-
-@media screen and (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .card {
-    flex: 1 1 calc(33% - 2rem);
-  }
-}
 
 
