@@ -34,7 +34,7 @@
 * The other way would be to BUILD MY OWN SERVER, use it to fetch the data fromn the WestElm server and then send it to the client from my own server. This is the route I decided to take to bypass the CORS Issue.
 * But first I proceeded to build the front end. I copy pasted the data from the API into a javascript file so I could have the hard coded data to build the front-end.
 * I needed to handle state of components so I decided to add in React as a cdn.
-* After adding the Carousel the javascript file had become super long so I decided to add in Node to make the code modular and for easy access of code separated into different files. 
+* After adding the Carousal the javascript file had become super long so I decided to add in Node to make the code modular and for easy access of code separated into different files. 
 * Once the front end was complete, I added Express to build a server. Now I could delete the hard coded data file. The express server helped retrieve the data directly from the WestElm server by making api calls and deliver it to the client. Including the server in the React application and running the entire app by a single `npm run start` command made the app easy to use.
 
 ## TODO with more time:
