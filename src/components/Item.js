@@ -6,9 +6,8 @@ import get from 'lodash.get';
 function Item(props) {
   const {item, activeCard, setActiveCard} = props;
   var thumbnailImagesUrls = item.images.map(image => image.href);
-  // const [overlayShow, setOverlayShow] = useState(false);
   const[heroImageUrl, setHeroImageUrl] = useState(
-    get(props, 'item.hero.href', 'hero') //object, path, default value
+    get(props, 'item.hero.href', 'hero') 
   );  
   const [imgUrls, setImgUrls] = useState([heroImageUrl, ...thumbnailImagesUrls]);   
 
