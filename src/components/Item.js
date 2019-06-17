@@ -17,8 +17,7 @@ function Item(props) {
   );    
     
   return (
-    <div className="card">
-    <li >           
+    <li className="card">           
       {activeCard && 
         <Carousel imgUrls={imgUrls} />  
       }
@@ -39,7 +38,6 @@ function Item(props) {
         </div> 
       </div>  
     </li> 
-    </div>    
   )    
 }
 
