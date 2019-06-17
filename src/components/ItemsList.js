@@ -1,24 +1,32 @@
 import React, {useState} from "react";
 import './ItemsList.css';
 import Item from './Item';
-import data from './data.js';
+import axios from "axios";
+// import data from './data.js';
 
 const ItemsList = (props) =>  { 
-  const [activeCard, setActiveCard] = useState();  
+  const [activeCard, setActiveCard] = useState();
+  const [data, setData] = useState();
+  axios.get(`http://localhost:3001`)
+    .then(response => setData(response.data));
+      
   return (
     <div >
       <ul className='container'>
-      {data.groups.map(item => 
-      (<Item 
-        item={item} 
-        key={item.id} 
-        activeCard={activeCard === item.id} 
-        setActiveCard={()=>setActiveCard(item.id)}       
-        />))}
+      {data 
+        ? data.groups.map(item => (
+          <Item 
+            item={item} 
+            key={item.id} 
+            activeCard={activeCard === item.id} 
+            setActiveCard={()=>setActiveCard(item.id)}       
+          />
+        ))
+        : `waiting for data from server`
+      }
       </ul>
     </div>
   ); 
-}            
-
+}        
 
 export default ItemsList;
