@@ -38,6 +38,9 @@
 * After adding the Carousal the javascript file had become super long so I decided to add in NODE to make the code modular and for easy access of code separated into different files. 
 * Once the front end was complete, I added EXPRESS to build a server. Now I could delete the hard coded data file. The express server helped retrieve the data directly from the WestElm server by making api calls and deliver it to the client. Including the server in the React application and running the entire app by a single `npm run start` command made the app easy to use.
 
+## TroubleShooting:
+* If you get the message `No Internet. Check your proxy server settings` then just restart your computer. 
+
 ## TODO with more time:
 * add more tests
 * implement JSDOC for type checking and documentation
