@@ -9,14 +9,15 @@
 6. The above command will start the front end on port 3000 and also the server on port 3001.
 
 ## A few useful Details:
-* If you have something already running on port 3000, then you will get a message asking if you would like to use another port. Type `y` for yes. 
-* The front end port will automatically open up in your browser at either port 3000 or a port that is free.
-* You can also manually type `localhost:<port>` in a tab in your browser to go to the front end port.
-* If you have something running on the server port 3001, then this application will automatically close everything that was previously running and will run the server for this app on port 3001.
+* If you have something running on the ports 3000 and/or 3001, then this application will automatically close everything that was previously running and will run the front end on port 3000 and the server on port 3001.
 * (IF INTERESTED) If you would like to see the JSON data being fetched by the server from the WestElm API and being used by the React Frontend, then you can go to the port 3001 by typing `localhost:3001` in a tab in your browser.
 
+## To run tests:
+* Type `command T` in the terminal to open another terminal window in the samr folder
+* Type `npm run cypress` to start the tests. A cypress window will open in which the running tests can be seen
+
 ## Info about project:
-* This project uses React, React Hooks, Node, Express, Cors, Axios, Javascript, HTML, CSS, lodash, node-fetch
+* This project uses React, React Hooks, Node, Express, Cypress, Cors, Axios, Javascript, HTML, CSS, lodash, node-fetch
 * To bypass the CORS issue the app has an Express server built in which is placed in the same folder as the React Hooks front end to enable easy start of the application. 
 
 ## Highlights of the project:
@@ -38,7 +39,7 @@
 * Once the front end was complete, I added EXPRESS to build a server. Now I could delete the hard coded data file. The express server helped retrieve the data directly from the WestElm server by making api calls and deliver it to the client. Including the server in the React application and running the entire app by a single `npm run start` command made the app easy to use.
 
 ## TODO with more time:
-* add tests
+* add more tests
 * implement JSDOC for type checking and documentation
 * add images to the Read Me
 * add more styling
