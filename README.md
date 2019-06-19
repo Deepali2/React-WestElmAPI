@@ -14,7 +14,10 @@
 
 ## To run tests:
 * Type `command T` in the terminal to open another terminal window in the samr folder
-* Type `npm run cypress` to start the tests. A cypress window will open in which the running tests can be seen
+* Type `npm run cypress` to start the tests. 
+* Click on `home_page_spec.js` A cypress window will open in which the running tests can be seen
+* Click on a hero image within 10 seconds to see the `renders when a big image is clicked on` test as passing
+* If 10 seconds are already up then refresh the page and this time click on a hero image within 10 seconds.
 
 ## Info about project:
 * This project uses React, React Hooks, Node, Express, Cypress, Cors, Axios, Javascript, HTML, CSS, lodash, node-fetch
