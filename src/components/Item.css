@@ -1,26 +1,26 @@
-
 .item-price {
   text-align: center;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .card {
   margin: 1rem;
-  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   min-width: 300px;
+  max-width: calc(33% - 2rem);
 }
 
 .card:hover {
   cursor: pointer;
-  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
   transform: translate3D(0, -2px, 0);
 }
 
-.heroImage {  
+.heroImage {
   width: 100%;
 }
 
@@ -40,7 +40,7 @@ h1 {
 
 .thumbnail {
   height: 50px;
-  margin-right: 15px;  
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 600px) {
@@ -54,4 +54,3 @@ h1 {
     flex: 1 1 calc(33% - 2rem);
   }
 }
-
