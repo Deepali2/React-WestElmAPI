@@ -8,7 +8,7 @@
     "cypress": "^3.3.1",
     "express": "^4.17.1",
     "lodash.get": "^4.4.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
